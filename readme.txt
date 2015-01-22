@@ -36,3 +36,7 @@ Thanks to Tijs Verkoyen for his CSS-to-inline-styles PHP library
 
 == Installation ==
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
+
+== Upgrade Notice ==
+
+== Frequently Asked Questions ==

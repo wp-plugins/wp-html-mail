@@ -9,7 +9,7 @@ Author URI: http://etzelstorfer.com
 License: GPLv2 or later
 */
 
-/*  Copyright 2014 Hannes Etzelstorfer (email : hannes@etzelstorfer.com) */
+/*  Copyright 2015 Hannes Etzelstorfer (email : hannes@etzelstorfer.com) */
 
 
 define( 'HAET_MAIL_PATH', plugin_dir_path(__FILE__) );
