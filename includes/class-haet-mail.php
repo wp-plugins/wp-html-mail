@@ -230,8 +230,8 @@ class haet_mail {
 			$use_template = $sender_plugin->use_template();
 
 		//$message.='<pre>=====POST:'.print_r($_POST,true).'</pre>';
-		$message.='SENDER-PLUGIN: <pre>'.print_r($sender_plugin,true).'</pre><br>';
-		$message.='ACTIVE-PLUGINS: '.print_r(Haet_Sender_Plugin::get_active_plugins(),true).'<br>';
+		// $message.='SENDER-PLUGIN: <pre>'.print_r($sender_plugin,true).'</pre><br>';
+		// $message.='ACTIVE-PLUGINS: '.print_r(Haet_Sender_Plugin::get_active_plugins(),true).'<br>';
 
 		$use_template = apply_filters( 'haet_mail_use_template', $use_template, array($to, $subject, $message, $headers, $attachments, ($sender_plugin?$sender_plugin->get_plugin_name():null)) );
 		
