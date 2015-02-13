@@ -48,6 +48,7 @@ class haet_mail {
             'headerpaddingright'	=> 	24,
             'headerpaddingbottom'	=>	12,
             'headerpaddingleft'		=>	24,
+            'headerimg'				=>	'',
             'headlinefont'			=>	'Helvetica, Arial, sans-serif',
             'headlinealign'			=> 	'left',
             'headlinefontsize'		=>	18,
@@ -61,7 +62,8 @@ class haet_mail {
             'textitalic'			=>	0,
             'textcolor'				=>	'#333333',
             'footer'				=> 	'<p>Sample Footer text: &copy; 2015 Acme, Inc.</p><p><strong>Acme, Inc.</strong></p><p>123 Main St.<br>Springfield, MA 12345<br><a href="http://www.acme-inc.com">www.acme-inc.com</a></p>',
-            'show_footerlink'		=>	1
+            'footerlink'			=>	1,
+            'footerbackground'		=>	'',
 		);
 	}
 
@@ -229,7 +231,7 @@ class haet_mail {
 		else
 			$use_template = $sender_plugin->use_template();
 
-		//$message.='<pre>=====POST:'.print_r($_POST,true).'</pre>';
+		// $message.='<pre>=====POST:'.print_r($_POST,true).'</pre>';
 		// $message.='SENDER-PLUGIN: <pre>'.print_r($sender_plugin,true).'</pre><br>';
 		// $message.='ACTIVE-PLUGINS: '.print_r(Haet_Sender_Plugin::get_active_plugins(),true).'<br>';
 
@@ -241,9 +243,7 @@ class haet_mail {
 				$message = $sender_plugin->modify_content($message);
 				$template = $sender_plugin->modify_template($template);
 			}else{
-				$message = nl2br($message);
-				while(strpos($message, '<br><br><br>'))
-					$message = str_replace('<br><br><br>','<br><br>',$message);	
+				$message = wpautop($message);
 			}
 
 	        $message = str_replace('{#mailcontent#}',$message,$template);
@@ -307,9 +307,9 @@ class haet_mail {
 
 	function get_template($options){
 		$template=$this->load_template_file('default');
-		if($options['headerimg'])
+		if(isset($options['headerimg']))
 			$options['headertext'] = '<img class="header-image" src="'.$options['headerimg'].'" alt="'.$options['headertext'].'">';
-		if($options['footerlink'])
+		if(isset($options['footerlink']))
 			$options['footer'].= '<p style="text-align:center;"><br><br><a href="http://wp-html-mail.com" class="footerlink"><img src="'.HAET_MAIL_URL.'/images/powered-by.png" alt="powered by WP HTML mail"></a></p>';
 		foreach ($options as $option => $value) {
 			if(strpos($option, 'bold'))

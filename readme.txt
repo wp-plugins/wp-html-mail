@@ -1,9 +1,9 @@
 === WP HTML MAIL ===
 Contributors: haet
-Tags: email, template, html mail, mail, message, ninja-forms, wp-e-commerce
+Tags: email, template, html mail, mail, message, ninja-forms, wp-e-commerce, caldera-forms, wp-e-commerce
 Requires at least: 3.9
 Tested up to: 4.1
-Stable tag: 0.2
+Stable tag: 0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,12 @@ Beautiful responsive HTML mails, fully customizable without any coding knowledge
 Beautiful responsive HTML mails, fully customizable without any coding knowledge 
 Create your own professional email template within a few minutes without any coding skills. 
 Easily change texts, colors, fonts, pictures, alignment and see all your changes immediately in the live preview.
+
+Turn email formatting on/off for specific plugins.
+Currently supported are
+* Ninja Forms
+* WP E-Commerce
+* Caldera Forms
 
 [more](http://wp-html-mail.com)
 
@@ -36,6 +42,21 @@ Thanks to Tijs Verkoyen for his CSS-to-inline-styles PHP library
 
 == Installation ==
 Extract the zip file and just drop the contents in the wp-content/plugins/ directory of your WordPress installation and then activate the Plugin from Plugins page.
+
+== Screenshots ==
+
+1. Customize mail sender
+2. easily change colors with colorpicker 
+3. append you contact details to the mail footer
+4. change font settings
+
+
+== Changelog ==
+
+= 0.3 =
+* replaced nl2br with wpautop https://wordpress.org/support/topic/replace-nl2br-with-wpautop 
+* removed a few PHP notices
+* added support for Caldera forms
 
 == Upgrade Notice ==
 

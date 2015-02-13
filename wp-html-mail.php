@@ -3,7 +3,7 @@
 Plugin Name: WP HTML Mail
 Plugin URI: http://wp-html-mail.com/
 Description: Use custom HTML mail templates for your WordPress mails
-Version: 0.2
+Version: 0.3
 Author: haet webdevelopment
 Author URI: http://etzelstorfer.com
 License: GPLv2 or later

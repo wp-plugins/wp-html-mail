@@ -2,6 +2,8 @@
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 require HAET_MAIL_PATH . 'includes/class-haet-sender-plugin-ninja-forms.php';
 require HAET_MAIL_PATH . 'includes/class-haet-sender-plugin-wp-e-commerce.php';
+require HAET_MAIL_PATH . 'includes/class-haet-sender-plugin-caldera-forms.php';
+
 
 class Haet_Different_Plugin_Exception extends Exception {}
 
@@ -25,6 +27,12 @@ class Haet_Sender_Plugin {
             'file'      =>  'wp-e-commerce/wp-shopping-cart.php',
             'class'     =>  'Haet_Sender_Plugin_WP_E_Commerce',
             'display_name' => 'WP eCommerce'
+        ),
+        'caldera-forms'   =>  array(
+            'name'      =>  'caldera-forms',
+            'file'      =>  'caldera-forms/caldera-core.php',
+            'class'     =>  'Haet_Sender_Plugin_Caldera_forms',
+            'display_name' => 'Caldera Forms'
         ),
     );
 
