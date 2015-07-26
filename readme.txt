@@ -1,9 +1,9 @@
 === WP HTML MAIL ===
 Contributors: haet
-Tags: email, template, html mail, mail, message, ninja-forms, wp-e-commerce, caldera-forms, wp-e-commerce
+Tags: email, template, html mail, mail, message, ninja-forms, wp-e-commerce, caldera-forms, wp-e-commerce, easy-digital-downloads, woocommerce
 Requires at least: 3.9
-Tested up to: 4.2.2
-Stable tag: 0.4
+Tested up to: 4.2.3
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,6 +19,8 @@ Currently supported are
 * Ninja Forms
 * WP E-Commerce
 * Caldera Forms
+* WooCommerce (pro)
+* Easy Digital Downloads (pro)
 
 [more](http://wp-html-mail.com)
 
@@ -52,6 +54,11 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 
 == Changelog ==
+
+= 1.0 = 
+* Bugfixes
+* added support for WooCommerce
+* added support for Easy Digital Downloads
 
 = 0.3 =
 * replaced nl2br with wpautop https://wordpress.org/support/topic/replace-nl2br-with-wpautop 
