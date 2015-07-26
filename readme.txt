@@ -16,6 +16,7 @@ Easily change texts, colors, fonts, pictures, alignment and see all your changes
 
 Turn email formatting on/off for specific plugins.
 Currently supported are
+
 * Ninja Forms
 * WP E-Commerce
 * Caldera Forms
