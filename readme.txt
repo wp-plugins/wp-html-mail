@@ -3,7 +3,7 @@ Contributors: haet
 Tags: email, template, html mail, mail, message, ninja-forms, wp-e-commerce, caldera-forms, wp-e-commerce, easy-digital-downloads, woocommerce
 Requires at least: 3.9
 Tested up to: 4.2.3
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,6 +55,9 @@ Extract the zip file and just drop the contents in the wp-content/plugins/ direc
 
 
 == Changelog ==
+
+= 1.1 =
+* Improved formatting of embedded tables and lists
 
 = 1.0 = 
 * Bugfixes
